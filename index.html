@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#deb887" >
+	<meta name="og:title" content="Adudience Entertainment" >
+	<title>Audience Entertainment</title>
+</head>
+<body>
+	<main class="HeroSection">
+		<img src="images/StudioShooting.jpg" alt="Shooting in studio." class="MainImage">
+		<h1 class="header">Audience Entertainment</h1>
+	</main>
+</body>
+<style>
+	*, 
+	*::after, 
+	*::before {
+		margin  : 0;
+		padding : 0;
+		border  : 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 10px;
+		width: 100vw;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+
+	body{
+		min-width: 100vw;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main.HeroSection {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-areas: "stack";
+		align-items: center;
+
+		> * {
+			grid-area: stack;
+			display: block;
+		}
+
+		.header {
+			font-size: clamp(4.8rem, 8vw , 6rem);
+			z-index: 999;
+			text-align: center;
+			color: #deb887;
+		}
+	}
+
+	img.MainImage {
+		box-sizing: border-box;
+		width      : 100vw;
+		height     : 100vh;
+		object-fit : cover;
+		filter     : contrast(.4) brightness(0.8) hue-rotate(341deg);
+	}
+</style>
+</html>
