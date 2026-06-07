@@ -12,6 +12,63 @@
 		<img src="images/StudioShooting.jpg" alt="Shooting in studio." class="MainImage">
 		<h1 class="header">Audience Entertainment</h1>
 	</main>
+	<section class="NameAndPhotoDisplay" >
+		<img src="images/SittingInChair.jpg" alt="Saurav profile photo sitting in chari." >
+		<section>
+			<h1>Saurav</h1>
+			<ul><li>Actor</li><li>|</li><li>Filmmaker</li><li>|</li><li>Founder</li></ul>
+		</section>
+	</section>
+	<section class="BusinessInformation">
+		<section>
+			<h1>Ad Films & Brand Commercials</h1>
+			<h3>High impact advertising films that drive engagement and sales</h3>
+		</section>
+		<section>
+			<h1>Web series and feature films</h1>
+			<h3>Compelling narratives ready for OTT platforms and theaterical releases.</h3>
+		</section>
+		<section>
+			<h1>AI films and AI short films</h1>
+			<h3>Innovative, futuristic storytelling powered by artificial intelligence.</h3>
+		</section>
+		<section>
+			<h1>AI Videos and Motion Content</h1>
+			<h3>Hyperrealistic and AI-generated videos, animaitons and explainer content.</h3>
+		</section>
+		<section>
+			<h1>Digital Solutions</h1>
+			<h3>High impact advertising films that drive engagement and sales</h3>
+		</section>
+	</section>
+	<section class="Gallery">
+		<img src="images/BasementShooting.jpg">
+		<img src="images/Dancing.jpg">
+		<img src="images/IMG-20260525-WA0007.jpg">
+		<img src="images/IMG-20260525-WA0008.jpg">
+		<img src="images/IMG-20260525-WA0009.jpg">
+		<img src="images/IMG-20260525-WA0010.jpg">
+		<img src="images/IMG-20260525-WA0011.jpg">
+		<img src="images/IMG-20260525-WA0012.jpg">
+		<img src="images/IMG-20260525-WA0014.jpg">
+		<img src="images/IMG-20260602-WA0008.jpg">
+		<img src="images/IMG-20260602-WA0009.jpg">
+		<img src="images/IMG-20260602-WA0010.jpg">
+		<img src="images/IMG-20260602-WA0011.jpg">
+		<img src="images/IMG-20260602-WA0012.jpg">
+		<img src="images/IMG-20260602-WA0014.jpg">
+		<img src="images/IMG-20260602-WA0015.jpg">
+		<img src="images/IMG-20260602-WA0016.jpg">
+		<img src="images/IMG-20260602-WA0017.jpg">
+		<img src="images/IMG-20260602-WA0018.jpg">
+		<img src="images/IMG-20260602-WA0019.jpg">
+		<img src="images/IMG-20260602-WA0020.jpg">
+		<img src="images/IMG-20260602-WA0022.jpg">
+		<img src="images/IMG-20260602-WA0023.jpg">		
+	</section>
+	<section class="Contact">
+		<h3>Offices in Maharashtra & Bihar</h3>
+	</section>
 </body>
 <style>
 	*, 
@@ -62,6 +119,116 @@
 		height     : 100vh;
 		object-fit : cover;
 		filter     : contrast(.4) brightness(0.8) hue-rotate(341deg);
+	}
+
+	.NameAndPhotoDisplay {
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+		width: 100vw;
+		background-color: antiquewhite;
+
+		img {
+			display: inline-block;
+			width: 50vw;
+			height: 100vh;
+			/* border: 8px white solid; */
+			/* border-right: 48px black solid;
+			border-left: 48px black solid; */
+
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			h1{
+				font-size: 64px;
+			}
+			ul {
+				margin-top: 8px;
+			}
+			ul li {
+				display: inline;
+				font-size: 18px;
+			}
+		}
+	}
+
+	.BusinessInformation {
+		/* height: 100vh; */
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+
+		section {
+			width : 100%;
+			height: calc(100vh / 2.3);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			h1, h3 {
+				margin: 8px;
+				color: white;
+			}
+			h1 {
+				font-size: 24px;
+			}
+		}
+		
+		section:nth-child(1){
+			background-color: #3186e8;
+		}
+		section:nth-child(2){
+			background-color: #ee2b2f;
+		}
+		section:nth-child(3) {
+			background-color: #06db26;
+		}
+		section:nth-child(4) {
+			background-color: #ec5e17;
+		}
+		section:nth-child(5) {
+			background-color: #7017ec;
+		}
+	}
+
+	.Gallery {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: antiquewhite;
+
+		img { 
+			width: calc(100vw / 5);
+			aspect-ratio: 1	;
+			border: 8px antiquewhite solid;
+			border-radius: 12px;
+		}
+	}
+
+	.Contact {
+		color: black;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		background-color: rgb(240, 182, 108);
+
+		h2{
+			font-size : 32px;
+		}
+		h3 {
+			margin-top : 8px;
+			font-size: 24px;
+		}
 	}
 </style>
 </html>
