@@ -124,7 +124,6 @@
 	.NameAndPhotoDisplay {
 		display: flex;
 		flex-direction: row;
-		height: 100vh;
 		width: 100vw;
 		background-color: antiquewhite;
 
@@ -132,10 +131,6 @@
 			display: inline-block;
 			width: 50vw;
 			height: 100vh;
-			/* border: 8px white solid; */
-			/* border-right: 48px black solid;
-			border-left: 48px black solid; */
-
 		}
 		section {
 			display: flex;
@@ -144,7 +139,7 @@
 			justify-content: center;
 			align-items: center;
 			h1{
-				font-size: 64px;
+				font-size: 72px;
 			}
 			ul {
 				margin-top: 8px;
@@ -152,8 +147,31 @@
 			ul li {
 				display: inline;
 				font-size: 18px;
+				padding-left : 4px;
+				padding-right: 4px;
 			}
 		}
+
+		@media (width < 1300px) {
+			flex-direction: column;
+			img {
+				width: 100vw;
+			}
+			section {
+				/* height: 100vh; */
+				padding-top: 24px;
+				padding-bottom: 24px;
+			}
+		}
+
+		@media (width < 700px) {
+			section {
+				h1{
+					font-size: 24px;
+				}
+			}
+		}
+
 	}
 
 	.BusinessInformation {
@@ -175,7 +193,10 @@
 				color: white;
 			}
 			h1 {
-				font-size: 24px;
+				font-size: 28px;
+			}
+			h3 {
+				font-size: 18px;
 			}
 		}
 		
@@ -194,6 +215,21 @@
 		section:nth-child(5) {
 			background-color: #7017ec;
 		}
+
+		@media (width < 700px) {
+			section {
+				width : 100%;
+				h1 {
+					font-size : 18px
+				}
+
+				h3 {
+					font-size: 10px;
+					text-align: center;
+				}
+
+			}
+		}
 	}
 
 	.Gallery {
@@ -209,6 +245,12 @@
 			border: 8px antiquewhite solid;
 			border-radius: 12px;
 		}
+
+		@media (width < 700px) {
+			img {
+				width : calc(100vw / 2);
+			}
+		}
 	}
 
 	.Contact {
@@ -222,13 +264,18 @@
 		flex-direction: column;
 		background-color: rgb(240, 182, 108);
 
-		h2{
-			font-size : 32px;
-		}
 		h3 {
 			margin-top : 8px;
 			font-size: 24px;
 		}
+
+		@media (width < 700px) {
+			h3 {
+				font-size: 18px;
+				text-align: center;
+			}
+		}
+
 	}
 </style>
 </html>
